@@ -1,0 +1,723 @@
+@import url(fonts/ggsans/style.css);
+* {
+    box-sizing: border-box;
+    font-family: 'gg sans Normal Regular';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #1e1f22;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    scrollbar-width: thin;
+}
+
+nav {
+    -webkit-app-region: drag;
+    height: 1.37rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#title {
+    user-select: none;
+    height: 0.5rem;
+    width: 3.05rem;
+    margin-top: 0.19    rem ;
+    margin-left: 0.77rem;
+}
+
+:not(nav) {
+    -webkit-app-region: no-drag;
+}
+
+nav > p {
+    margin: 0.4rem 0.7rem
+}
+
+.nav-buttons {
+    height: 100%;
+    display: flex;
+}
+
+.nav-buttons > button {
+    transition: background .2s ease;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 1.7rem;
+    align-items: center;
+    aspect-ratio: 1;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    display: block;
+}
+
+.nav-buttons > button:hover {
+    transition: .2s ease;
+    background-color: #2c2e32;
+}
+
+.nav-buttons > button:active {
+    background-color: #4c4c4c;
+}
+
+.general-grid {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    grid-template-rows: 100%;
+    min-height: 98vh;
+    align-items: start;
+}
+
+.general-grid > .servers_sidebard {
+    display: grid;
+    grid-template-columns: 4.5rem;
+    grid-template-rows: 3.5rem;
+    width: 4.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-content: start;
+}
+
+.servers_sidebard > div {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.servers_sidebard > div > .discord-icon {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: #313338;
+    color: #dbdee1;
+    text-align: center;
+    align-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.25s ease;
+    margin-top: 0.4rem;
+}
+
+.servers_sidebard > div > .discord-icon:hover {
+    border-radius: 30%;
+    background-color: #5865f2;
+}
+
+.servers_sidebard > hr {
+    width: 45%;
+    border: 0.1rem solid #36373e;
+    margin-top: 0.28rem;
+    margin-bottom: 0.4rem;
+}
+
+.servers_sidebard > div > img {
+    margin-bottom: 0.1rem;  
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.servers_sidebard > div > img:hover {
+    border-radius: 30%;
+}
+
+.servers_sidebard > div > .notification {
+    display: block;
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    left: -0.25rem;
+    background-color: transparent;
+    border-radius: 100%;
+    transition: 0.25s ease;
+}
+
+.servers_sidebard > div:hover .notification{
+    height: 1.3rem;
+    border-radius: 30%;
+    background-color: white;
+}
+
+.servers_sidebard > div:hover .server_title{
+    transform: scale(1, 1);
+}
+
+.servers_sidebard > div:active{
+    margin-bottom: 0.3rem;
+    margin-top: 0.1rem;
+}
+
+
+.servers_sidebard > div > .create-server {
+    display: block;
+    color: #23a559;
+    background-color: #313338;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    align-content: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.servers_sidebard > div > .create-server:hover {
+    border-radius: 30%;
+    background-color: #23a559;
+    color: white;
+}
+
+.servers_sidebard > div > .search-server {
+    display: block;
+    color: #23a559;
+    background-color: #313338;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    align-content: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.servers_sidebard > div > .search-server:hover {
+    border-radius: 30%;
+    background-color: #23a559;
+    color: white;
+}
+
+.server_title {
+    display: flex;
+    position: absolute;
+    max-width: 12.8rem;
+    left: 4.5rem;
+    align-items: center;
+    transform: scale(0, 0);
+    transform-origin: left top;
+    transition: transform 0.02s ease;
+    z-index: 1;
+}
+
+.server_title i{
+    display: block;
+    color: #111214;
+    position: relative;
+    left: 0.2rem;
+}
+
+.server_title p{
+    display: block;
+    background-color: #111214;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    align-content: center;
+    padding: 0.5rem 0.8rem;
+}
+
+.general-grid > .friends-container {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    height: 98vh;
+    
+}
+
+.friends-container > .friends1 {
+    background-color: #2b2d31;
+    height: 100%;
+    border-top-left-radius: 0.5rem;
+    display: grid;
+    height: 98vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3.05rem 1fr 3.31rem;
+}
+
+.friends1 > div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #1f2023;
+    box-shadow: 0 0.004rem 0.07rem #1f2023;
+}
+
+.friends1 > .search-friends1 > button{
+    background-color: #1e1f22;
+    color: #949ba4;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 0.87rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 13.7rem ;
+    padding: 0.315rem 0.34rem;
+    letter-spacing: 0.003rem;
+    cursor: pointer;
+    font-family: 'gg Sans Medium Regular';
+}
+
+.friends1 > .friends1-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.75rem 2.75rem 2.75rem 1fr;
+    overflow-y: scroll;
+    margin: 0.1rem;
+    margin-bottom: 0;
+    padding-top: 0.37rem;
+}
+
+.friends1 > .friends1-options:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+.friends1 > .friends1-options::-webkit-scrollbar {
+    width: 0.3rem;
+}
+.friends1 > .friends1-options::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.friends1 > .friends1-options::-webkit-scrollbar-thumb {
+    background-color: #1a1b1e;
+    border-radius: 6px;
+    background-clip: content-box;
+    visibility: hidden
+}
+.friends1 > .friends1-options::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0);
+}
+
+.friends1 > .friends1-options > div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0.3rem 0.4rem;
+}
+
+.friends1 > .friends1-options > .direct-messages {
+    display: grid;
+    align-self: start;
+    grid-template-rows: auto;
+    color: #949ba4;
+    grid-template-columns: 1fr;
+    padding: 0.3rem 0;
+}
+
+.direct-messages > .text-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    padding: 0.8rem 0.8rem 0.2rem 1.06rem;
+    height: max-content;
+    margin: 0;
+    cursor: default;
+    font-family: 'gg sans Medium Regular';
+}
+
+.direct-messages > .text-container:hover {
+    background-color: transparent;
+}
+
+.direct-messages > .text-container:hover p {
+    color: #d0dee1;
+}
+
+.direct-messages > .text-container > p {
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.055rem;
+}
+
+.direct-messages > .text-container > svg {
+    align-content: center;
+    height: 1.05rem;
+    width: 1.05rem;
+}
+
+.direct-messages > div {
+    display: flex;
+    align-items: center;
+    margin: 0.064rem 0.42rem;
+    margin-right: 0;
+    cursor: pointer;
+    padding: 0.27rem 0;
+    padding-right: 0;
+    border-radius: 0.25rem;
+    padding-left: 0.5rem;
+    height: 2.63rem;
+}
+
+.direct-messages > div:hover {
+    background-color: #35373c;
+}
+
+.direct-messages > div:hover i {
+    visibility: visible;
+}
+
+.direct-messages > div:active {
+    background-color: #404249;
+}
+
+.usernamestatus {
+    align-content: center;
+    padding-left: 0.57rem;
+}
+
+.usernamestatus > .username {
+    font-family: "gg Sans Medium Regular";
+    font-size: 1rem;
+}
+
+.usernamestatus > .direct-messsage-status {
+    font-size: 0.75rem;
+}
+
+.direct-messages > div > img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: 80% 100%;
+    cursor: pointer;
+}
+
+.direct-messages > div > .fechar-conversa-icon {
+    visibility: hidden;
+    margin-left: auto;
+    margin-right: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.friends1-options > div > p {
+    padding: 0.5rem 0.75rem;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #949ba4;
+    width: 100%;
+    height: 2.63rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-family: "gg sans Medium Regular";
+}
+
+.friends1-options > div > p:hover {
+    background-color: #35373c;
+    color: #ffffff;
+}
+
+.friends1-options > div > p:active {
+    background-color: #3b3d44;
+}
+
+.friends1-options > div > p > svg {
+    margin-right: 1rem;
+}
+
+.friends1 > div:last-child{
+    background-color: #232428;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-profile-preview {
+    display: flex;
+    margin-left: 0.39rem;
+    padding: 0.2rem 0;
+    padding-left: 0.1rem;
+    border-radius: 0.25rem;
+    width: 7.6rem;
+    align-items: center;
+}
+
+.bottom-profile-preview:hover {
+    background-color: #3d3e45;
+}
+
+.bottom-profile-preview > img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: 80% 100%;
+    cursor: pointer;
+    margin-bottom: 0.1rem;
+}
+
+.status-circle {
+    display: block;
+    position: relative;
+    background-color: #23a55a;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    margin-top: 1.3rem;
+    margin-left: -0.8rem;
+    border: 0.2rem solid #232428;
+    cursor: pointer;
+}
+
+.status-circle-direct {
+    display: block;
+    position: relative;
+    background-color: #23a55a;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    margin-top: 1.6rem;
+    margin-left: -0.85rem;
+    border: 0.2rem solid #2b2d31;
+    cursor: pointer;
+}
+
+.bottom-profile-preview > div {
+    margin-left: 0.3rem;
+}
+
+#username {
+    font-size: 0.85rem;
+    font-family: 'gg sans SemiBold Regular';
+    cursor: pointer;
+    margin-top: 0.2rem;
+    line-height: 0.8rem;
+}
+
+#status {
+    font-size: 0.75rem;
+    color: #b5bac1;
+}
+
+.bottom-menu-options {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-right: 0.45rem;
+    align-items: center;
+}
+
+.bottom-menu-options > i:first-child{
+    padding-right: 0.36rem;
+}
+
+.bottom-menu-options > i {
+    display: flex;
+    padding: 0.4rem;
+    padding-top: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.bottom-menu-options > i:hover {
+    background-color: #3d3e45;
+}
+
+.bottom-menu-options > i > svg {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+  }
+
+.gearicon:hover svg {
+    animation-name: rotate;
+    animation-duration: 1.25s;
+}
+
+.friends-container > .friends2 {
+    display: grid;
+    grid-template-columns: 1fr 26.06rem;
+    grid-template-areas: 
+    "nav nav"
+    "friend-list activity"
+    ;
+    grid-template-rows: 3.05rem 1fr;
+    background-color: #313338;
+}
+
+.friends2 > .header {
+    grid-column: 1/3;
+    border-bottom: 1px solid #1f2023;
+    box-shadow: 0 0.004rem 0.07rem #1f2023;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header > div > p{
+    display: flex;
+    height: min-content;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    font-family: 'gg sans SemiBold Regular';
+}
+.header > div > p > svg{
+    margin-right: 0.5rem;
+    color: #80848e;
+}
+
+.header > div > .vertical-rule {
+    border-right: 0.1rem solid #3f4147;
+    height: 1.50rem;
+    margin: 1rem;
+}
+
+.header > div > button {
+    background-color: transparent;
+    color: #b5bab9;
+    font-family: 'gg sans Medium Regular';
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.header > div > button:hover:not(.addfriend) {
+    background-color: #43444b;
+    color: white;
+}
+
+.header > div > .addfriend{
+    background-color: #248046;
+    color: white;
+}
+.header-right-icons {
+    display: flex;
+    align-content: center;
+}
+
+.header-right-icons > i {
+    display: flex;
+    align-content: center;
+    margin-right: 1rem;
+}
+
+#new-private-group {
+    margin: 0;
+}
+
+.header-right-icons > i > svg {
+    color: #b5bac1;
+    cursor: pointer;
+}
+
+.header-right-icons > i > svg:hover {
+    color: white;
+}
+
+.friend-list {
+    display: grid;
+    grid-template-rows: 4rem 2.65rem 1fr;
+    align-items: center;
+    width: 100%;
+    border-right: 0.1rem solid #3f4147;
+}
+
+.friend-list > div:not(.friend2-list-container) {
+    display: flex;
+    height: -webkit-fill-available;
+    align-items: center;
+    padding: 0 1.9rem;
+}
+
+
+.friend-list > div > input{
+    background-color: #1e1f22;
+    height: 2.13rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.friend-list > div > input::placeholder {
+    color: #8e949d;
+}
+
+.friend-list > div > .lupa-icon {
+    position: relative;
+    display: flex;
+    margin-left: -1.65rem;
+}
+
+.lupa-icon > svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    color: #b5bac1;
+}
+ 
+.allfriends-container {
+    border-bottom: 0.06rem solid #3f4147;
+    margin: 0 1.85rem;
+    padding: 0!important;
+}
+
+#all-friends {
+    font-size: 0.76rem;
+    margin-bottom: 0.4rem;
+    margin-left: 0.05rem;
+    color: #abb1b7;
+    font-weight: 500;
+    font-family: "gg sans SemiBold Regular";
+}
+
+.friend2-list-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 83vh;
+    padding-right: 1.4rem;
+    padding-left: 1.85rem;
+    grid-template-rows: auto;
+    overflow-y: scroll;
+    align-content: start;
+}
+
+.friend2-container {
+    height: 3.81rem;
+    border-top: 0.06rem solid #3f4147;
+    display: flex;
+    align-items: center;
+}
+
+.friend2-container > img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.25s ease;
+}

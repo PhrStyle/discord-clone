@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Discord</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+  </head>
+  <body>
+    
+    <nav>
+        <img id="title" src="images/discord-logo-transparent.png">
+        <div class="nav-buttons">
+          <button id="minimize"><i class="fa-light fa-window-minimize"></i></button>
+          <button id="maximize"><i class="fa-light fa-square"></i></button>
+          <button id="close"><i class="fa-light fa-xmark"></i></button>
+        </div>
+    </nav>
+    
+
+    <div class="general-grid">
+        <div class="servers_sidebard">
+          <div>
+            <i class="notification"></i>
+            <i class="fa-brands fa-discord discord-icon"></i>
+            <div class="server_title">
+              <i class="fa-solid fa-caret-left"></i>
+              <p>Mensagens diretas</p>
+            </div>
+          </div>
+          
+          <hr>
+
+          <div>
+            <i class="notification"></i>
+            <img src="images/buzz1.png">
+            <div class="server_title">
+              <i class="fa-solid fa-caret-left"></i>
+              <p>viva a greve!</p>
+            </div>
+          </div>
+
+          <div>
+            <i class="notification"></i>
+            <img src="images/buzz2.png">
+            <div class="server_title">
+              <i class="fa-solid fa-caret-left"></i>
+              <p>viva a greve!</p>
+            </div>
+          </div>
+
+          <div>
+            <i class="notification"></i>
+            <img src="images/buzz3.png">
+            <div class="server_title">
+              <i class="fa-solid fa-caret-left"></i>
+              <p>viva a greve!</p>
+            </div>
+          </div>
+
+          <div>
+            <i class="notification"></i>
+            <img src="images/lula.png">
+            <div class="server_title">
+              <i class="fa-solid fa-caret-left"></i>
+              <p>viva a greve!</p>
+            </div>
+          </div>
+          
+          <div>
+            <i class="fa-solid fa-plus create-server"></i>
+            <div class="server_title">
+              <i class="fa-solid fa-caret-left"></i>
+              <p>Adicionar um servidor</p>
+            </div>
+          </div>
+
+          <div>
+            <i class="notification"></i>
+            <i class="fa-solid fa-compass search-server"></i>
+            <div class="server_title">
+              <i class="fa-solid fa-caret-left"></i>
+              <p>Explorar servidores do Descobrir</p>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="friends-container">
+          <div class="friends1">
+
+            <div class="search-friends1">
+              <button>Encontre ou comece uma conversa</button>
+            </div>
+
+            <div class="friends1-options">
+              <div>
+                <p>
+                  <svg class="linkButtonIcon_c91bad" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" class=""></path><path fill="currentColor" d="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56 1.33 1.25C6.12 8.65 9.46 12 13 12h1a8 8 0 0 1 8 8 2 2 0 0 1-2 2 .21.21 0 0 1-.2-.15 7.65 7.65 0 0 0-1.32-2.3c-.15-.2-.42-.06-.39.17l.25 2c.02.15-.1.28-.25.28H9a2 2 0 0 1-2-2v-2.22c0-1.57-.67-3.05-1.53-4.37A15.85 15.85 0 0 1 3 5Z" class=""></path>
+                  </svg>
+                  Amigos
+                </p>
+              </div>
+
+              <div>
+                <p>
+                  <svg class="linkButtonIcon_c91bad" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M15 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" class=""></path><path fill="currentColor" fill-rule="evenodd" d="M7 4a1 1 0 0 0 0 2h3a1 1 0 1 1 0 2H5.5a1 1 0 0 0 0 2H8a1 1 0 1 1 0 2H6a1 1 0 1 0 0 2h1.25A8 8 0 1 0 15 4H7Zm8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" clip-rule="evenodd" class=""></path><path fill="currentColor" d="M2.5 10a1 1 0 0 0 0-2H2a1 1 0 0 0 0 2h.5Z" class=""></path></svg>
+                  Nitro
+                </p>
+              </div>
+
+              <div>
+                <p>
+                  <svg class="linkButtonIcon_c91bad" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M2.63 4.19A3 3 0 0 1 5.53 2H7a1 1 0 0 1 1 1v3.98a3.07 3.07 0 0 1-.3 1.35A2.97 2.97 0 0 1 4.98 10c-2 0-3.44-1.9-2.9-3.83l.55-1.98ZM10 2a1 1 0 0 0-1 1v4a3 3 0 0 0 3 3 3 3 0 0 0 3-2.97V3a1 1 0 0 0-1-1h-4ZM17 2a1 1 0 0 0-1 1v3.98a3.65 3.65 0 0 0 0 .05A2.95 2.95 0 0 0 19.02 10c2 0 3.44-1.9 2.9-3.83l-.55-1.98A3 3 0 0 0 18.47 2H17Z" class=""></path><path fill="currentColor" d="M21 11.42V19a3 3 0 0 1-3 3h-2.75a.25.25 0 0 1-.25-.25V16a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v5.75c0 .14-.11.25-.25.25H6a3 3 0 0 1-3-3v-7.58c0-.18.2-.3.37-.24a4.46 4.46 0 0 0 4.94-1.1c.1-.12.3-.12.4 0a4.49 4.49 0 0 0 6.58 0c.1-.12.3-.12.4 0a4.45 4.45 0 0 0 4.94 1.1c.17-.07.37.06.37.24Z" class=""></path></svg>
+                  Loja
+                </p>
+              </div>
+              <div class="direct-messages">
+                <div class="text-container">
+                  <p>MENSAGENS DIRETAS</p>
+                  <svg x="0" y="0" class="privateChannelRecipientsInviteButtonIcon_c47fa9 icon_e44302" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5V6Z" class=""></path></svg>
+                </div>
+                
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+
+                <div>
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                  
+                  <i class="fa-light fa-xmark fechar-conversa-icon"></i>
+                </div>
+                
+              </div>
+            </div>
+
+            <div>
+
+              <div class="bottom-profile-preview">
+                <img src="images/akame.png">
+                <i class="status-circle"></i>
+                <div class="bottom-name">
+                  <p id="username">phr</p>
+                  <p id="status">Disponível</p>
+                </div>
+              </div>
+
+              <div class="bottom-menu-options">
+                <i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><defs><clipPath id="__lottie_element_70"><rect width="24" height="24" x="0" y="0"></rect></clipPath><clipPath id="__lottie_element_72"><path d="M0,0 L600,0 L600,600 L0,600z"></path></clipPath><clipPath id="__lottie_element_76"><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><clipPath id="__lottie_element_83"><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><clipPath id="__lottie_element_93"><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><mask id="__lottie_element_94"><rect fill="#ffffff" width="600" height="600" transform="matrix(1,0,0,1,200,200)"></rect><path fill="#000000" clip-rule="nonzero" d=" M1025.219970703125,-87.2040023803711 C1025.219970703125,-87.2040023803711 853.697021484375,87.75 853.697021484375,87.75 C853.697021484375,87.75 789.760009765625,155.23199462890625 839.1370239257812,204.86199951171875 C893,259 957.6799926757812,191.05599975585938 957.6799926757812,191.05599975585938 C957.6799926757812,191.05599975585938 1129.2030029296875,16.101999282836914 1129.2030029296875,16.101999282836914 C1129.2030029296875,16.101999282836914 1212,-66 1160.2149658203125,-115.55400085449219 C1108.781005859375,-164.77200317382812 1025.219970703125,-87.2040023803711 1025.219970703125,-87.2040023803711" fill-opacity="1"></path><path fill="#ffffff" clip-rule="nonzero" d=" M698,405 C698,405 642,405 642,405 C642,405 642,479 642,479 C642,479 698,479 698,479 C698,479 698,405 698,405" fill-opacity="1"></path></mask></defs><g clip-path="url(#__lottie_element_70)"><g clip-path="url(#__lottie_element_72)" transform="matrix(0.03999999910593033,0,0,0.03999999910593033,0,0)" opacity="1" style="display: block;"><g clip-path="url(#__lottie_element_93)" transform="matrix(1,0,0,1,-200,-200)" opacity="1" style="display: block;"><g mask="url(#__lottie_element_94)"><g style="display: none;" transform="matrix(-25,0,0,25,800,173)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,12,8.5)"><path fill="#b5bac1" fill-opacity="1" d=" M-4,-1.3799999952316284 C-4,-3.5889999866485596 -2.2090001106262207,-5.380000114440918 0,-5.380000114440918 C2.2090001106262207,-5.380000114440918 4,-3.5889999866485596 4,-1.3799999952316284 C4,-1.3799999952316284 4,2.509999990463257 4,2.509999990463257 C4,4.718999862670898 2.2090001106262207,6.5 0,6.5 C-2.2090001106262207,6.5 -4,4.718999862670898 -4,2.509999990463257 C-4,2.509999990463257 -4,-1.3799999952316284 -4,-1.3799999952316284z"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,14)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="#b5bac1" stroke-opacity="1" stroke-width="2" d=" M-7,-2.990000009536743 C-7,0.8759999871253967 -3.865999937057495,4.010000228881836 0,4.010000228881836 C3.865999937057495,4.010000228881836 7,0.8759999871253967 7,-2.990000009536743"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,20)"><path fill="#b5bac1" fill-opacity="1" d=" M-1,-2 C-1,-2.2760000228881836 -0.7760000228881836,-2.5 -0.5,-2.5 C-0.5,-2.5 0.5,-2.5 0.5,-2.5 C0.7760000228881836,-2.5 1,-2.2760000228881836 1,-2 C1,-2 1,2 1,2 C1,2.2760000228881836 0.7760000228881836,2.5 0.5,2.5 C0.5,2.5 -0.5,2.5 -0.5,2.5 C-0.7760000228881836,2.5 -1,2.2760000228881836 -1,2 C-1,2 -1,-2 -1,-2z"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,22)"><path fill="#b5bac1" fill-opacity="1" d=" M3,-1 C3.552000045776367,-1 4,-0.5519999861717224 4,0 C4,0.5519999861717224 3.552000045776367,1 3,1 C3,1 -3,1 -3,1 C-3.552000045776367,1 -4,0.5519999861717224 -4,0 C-4,-0.5519999861717224 -3.552000045776367,-1 -3,-1 C-3,-1 3,-1 3,-1z"></path></g></g><g transform="matrix(-25,0,0,25,800,173)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,12,8.5)"><path fill="#b5bac1" fill-opacity="1" d=" M-4,-1.4600000381469727 C-4,-3.6689999103546143 -2.2090001106262207,-5.460000038146973 0,-5.460000038146973 C2.2090001106262207,-5.460000038146973 4,-3.6689999103546143 4,-1.4600000381469727 C4,-1.4600000381469727 4,2.5 4,2.5 C4,4.709000110626221 2.2090001106262207,6.5 0,6.5 C-2.2090001106262207,6.5 -4,4.709000110626221 -4,2.5 C-4,2.5 -4,-1.4600000381469727 -4,-1.4600000381469727z"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,14)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="#b5bac1" stroke-opacity="1" stroke-width="2" d=" M-7,-3 C-7,0.8659999966621399 -3.865999937057495,4 0,4 C3.865999937057495,4 7,0.8659999966621399 7,-3"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,20)"><path fill="#b5bac1" fill-opacity="1" d=" M-1,-2 C-1,-2.2760000228881836 -0.7760000228881836,-2.5 -0.5,-2.5 C-0.5,-2.5 0.5,-2.5 0.5,-2.5 C0.7760000228881836,-2.5 1,-2.2760000228881836 1,-2 C1,-2 1,2 1,2 C1,2.2760000228881836 0.7760000228881836,2.5 0.5,2.5 C0.5,2.5 -0.5,2.5 -0.5,2.5 C-0.7760000228881836,2.5 -1,2.2760000228881836 -1,2 C-1,2 -1,-2 -1,-2z"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,22)"><path fill="#b5bac1" fill-opacity="1" d=" M3,-1 C3.552000045776367,-1 4,-0.5519999861717224 4,0 C4,0.5519999861717224 3.552000045776367,1 3,1 C3,1 -3,1 -3,1 C-3.552000045776367,1 -4,0.5519999861717224 -4,0 C-4,-0.5519999861717224 -3.552000045776367,-1 -3,-1 C-3,-1 3,-1 3,-1z"></path></g></g></g></g><g clip-path="url(#__lottie_element_83)" transform="matrix(1,0,0,1,-200,-200)" opacity="1" style="display: none;"><g transform="matrix(25,0,0,25,200,200)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,12,12)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="#b5bac1" stroke-opacity="1" stroke-width="2" d=" M9.932000160217285,-9.932000160217285 C9.97700023651123,-9.97700023651123 10,-10 10,-10"></path></g></g><g style="display: none;"><g><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"></path></g></g></g><g clip-path="url(#__lottie_element_76)" style="display: none;" transform="matrix(1,0,0,1,-200,-200)" opacity="1"><g style="display: block;" transform="matrix(25,0,0,25,200,200)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,12,12)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="#b5bac1" stroke-opacity="1" stroke-width="2" d=" M-10,10 C-10,10 10,-10 10,-10"></path></g></g></g></g></g></svg></i>
+                <i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><defs><clipPath id="__lottie_element_5"><rect width="24" height="24" x="0" y="0"></rect></clipPath><clipPath id="__lottie_element_7"><path d="M0,0 L600,0 L600,600 L0,600z"></path></clipPath><clipPath id="__lottie_element_14"><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><clipPath id="__lottie_element_24"><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><mask id="__lottie_element_25"><rect fill="#ffffff" width="600" height="600"></rect><path fill="#000000" clip-rule="nonzero"></path></mask><clipPath id="__lottie_element_28"><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><path></path><clipPath id="__lottie_element_35"><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><path></path><clipPath id="__lottie_element_42"><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><mask id="__lottie_element_43"><rect fill="#ffffff" width="600" height="600" transform="matrix(0.9615384936332703,0,0,0.9615384936332703,211.53846740722656,211.53846740722656)"></rect><path fill="#000000" clip-rule="nonzero" d=" M67.22000122070312,823.7960205078125 C67.22000122070312,823.7960205078125 -126.3030014038086,1017.75 -126.3030014038086,1017.75 C-126.3030014038086,1017.75 -76.63800048828125,1067.092041015625 -76.63800048828125,1067.092041015625 C-76.63800048828125,1067.092041015625 -22.31999969482422,1121.0560302734375 -22.31999969482422,1121.0560302734375 C-22.31999969482422,1121.0560302734375 171.2030029296875,927.1019897460938 171.2030029296875,927.1019897460938 C171.2030029296875,927.1019897460938 239.677001953125,860.3419799804688 186.88099670410156,810.114013671875 C130,756 67.22000122070312,823.7960205078125 67.22000122070312,823.7960205078125" fill-opacity="1"></path></mask><clipPath id="__lottie_element_46"><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><path></path><clipPath id="__lottie_element_53"><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><path d=" M0.5009999871253967,-0.10000000149011612 C0.5009999871253967,-0.10000000149011612 -0.09300000220537186,-0.10000000149011612 -0.09300000220537186,-0.10000000149011612 C-0.09300000220537186,-0.10000000149011612 -0.09300000220537186,1.0759999752044678 -0.09300000220537186,1.0759999752044678 C-0.09300000220537186,1.0759999752044678 0.5009999871253967,1.0759999752044678 0.5009999871253967,1.0759999752044678 C0.5009999871253967,1.0759999752044678 0.5009999871253967,-0.10000000149011612 0.5009999871253967,-0.10000000149011612" fill-opacity="1"></path></defs><g clip-path="url(#__lottie_element_5)"><g clip-path="url(#__lottie_element_7)" transform="matrix(0.03999999910593033,0,0,0.03999999910593033,0,0)" opacity="1" style="display: block;"><g clip-path="url(#__lottie_element_42)" transform="matrix(1.0399999618530273,0,0,1.0399999618530273,-220,-220)" opacity="1" style="display: block;"><g mask="url(#__lottie_element_43)"><g clip-path="url(#__lottie_element_53)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g transform="matrix(25,0,0,25,200,200)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,12,12.288000106811523)"><path fill="#b5bac1" fill-opacity="1" d=" M-8,-0.2879999876022339 C-8,-4.705999851226807 -4.418000221252441,-8.288000106811523 0,-8.288000106811523 C4.418000221252441,-8.288000106811523 8,-4.705999851226807 8,-0.2879999876022339 C8,0.4050000011920929 7.953999996185303,1.0720000267028809 7.854000091552734,1.7120000123977661 C7.854000091552734,1.7120000123977661 6,1.7120000123977661 6,1.7120000123977661 C5.056000232696533,1.7120000123977661 4.166999816894531,2.1570000648498535 3.5999999046325684,2.9119999408721924 C3.5999999046325684,2.9119999408721924 1.6269999742507935,5.541999816894531 1.6269999742507935,5.541999816894531 C1.1579999923706055,6.168000221252441 1.0360000133514404,6.98799991607666 1.3040000200271606,7.7230000495910645 C1.8890000581741333,9.331999778747559 3.88700008392334,10.288000106811523 5.48199987411499,9.131999969482422 C8.83899974822998,6.701000213623047 10,3.380000114440918 10,-0.2879999876022339 C10,-5.810999870300293 5.5229997634887695,-10.288000106811523 0,-10.288000106811523 C-5.5229997634887695,-10.288000106811523 -10,-5.810999870300293 -10,-0.2879999876022339 C-10,3.380000114440918 -8.83899974822998,6.701000213623047 -5.48199987411499,9.131999969482422 C-3.88700008392334,10.288000106811523 -1.8890000581741333,9.331999778747559 -1.3040000200271606,7.7230000495910645 C-1.0360000133514404,6.98799991607666 -1.1579999923706055,6.168000221252441 -1.6269999742507935,5.541999816894531 C-1.6269999742507935,5.541999816894531 -3.5999999046325684,2.9119999408721924 -3.5999999046325684,2.9119999408721924 C-4.166999816894531,2.1570000648498535 -5.056000232696533,1.7120000123977661 -6,1.7120000123977661 C-6,1.7120000123977661 -7.854000091552734,1.7120000123977661 -7.854000091552734,1.7120000123977661 C-7.953999996185303,1.0720000267028809 -8,0.4050000011920929 -8,-0.2879999876022339z"></path></g></g></g><g clip-path="url(#__lottie_element_46)" style="display: none;"><g style="display: none;"><g><path></path></g></g></g></g></g><g clip-path="url(#__lottie_element_24)" style="display: none;"><g mask="url(#__lottie_element_25)"><g clip-path="url(#__lottie_element_35)" style="display: none;"><g style="display: none;"><g><path></path></g></g></g><g clip-path="url(#__lottie_element_28)" style="display: none;"><g style="display: none;"><g><path></path></g></g></g></g></g><g clip-path="url(#__lottie_element_14)" transform="matrix(1,0,0,1,-200,-200)" opacity="1" style="display: block;"><g style="display: none;"><g><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"></path></g></g><g style="display: none;"><g><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"></path></g></g></g><g style="display: none;"><g><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"></path></g></g></g></g></svg></i>
+                <i class="gearicon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><defs><clipPath id="__lottie_element_60"><rect width="24" height="24" x="0" y="0"></rect></clipPath><clipPath id="__lottie_element_62"><path d="M0,0 L600,0 L600,600 L0,600z"></path></clipPath></defs><g clip-path="url(#__lottie_element_60)"><g clip-path="url(#__lottie_element_62)" transform="matrix(0.03999999910593033,0,0,0.03999999910593033,0,0)" opacity="1" style="display: block;"><g transform="matrix(25,0,0,25,300,300)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="#b5bac1" fill-opacity="1" d=" M-1.4420000314712524,-10.906000137329102 C-1.8949999809265137,-10.847000122070312 -2.1470000743865967,-10.375 -2.078000068664551,-9.92300033569336 C-1.899999976158142,-8.756999969482422 -2.265000104904175,-7.7210001945495605 -3.061000108718872,-7.390999794006348 C-3.8570001125335693,-7.060999870300293 -4.8480000495910645,-7.534999847412109 -5.546000003814697,-8.484999656677246 C-5.816999912261963,-8.852999687194824 -6.329999923706055,-9.008999824523926 -6.691999912261963,-8.730999946594238 C-7.458000183105469,-8.142999649047852 -8.142999649047852,-7.458000183105469 -8.730999946594238,-6.691999912261963 C-9.008999824523926,-6.329999923706055 -8.852999687194824,-5.816999912261963 -8.484999656677246,-5.546000003814697 C-7.534999847412109,-4.8480000495910645 -7.060999870300293,-3.8570001125335693 -7.390999794006348,-3.061000108718872 C-7.7210001945495605,-2.265000104904175 -8.756999969482422,-1.899999976158142 -9.92300033569336,-2.078000068664551 C-10.375,-2.1470000743865967 -10.847000122070312,-1.8949999809265137 -10.906000137329102,-1.4420000314712524 C-10.968000411987305,-0.9700000286102295 -11,-0.48899999260902405 -11,0 C-11,0.48899999260902405 -10.968000411987305,0.9700000286102295 -10.906000137329102,1.4420000314712524 C-10.847000122070312,1.8949999809265137 -10.375,2.1470000743865967 -9.92300033569336,2.078000068664551 C-8.756999969482422,1.899999976158142 -7.7210001945495605,2.265000104904175 -7.390999794006348,3.061000108718872 C-7.060999870300293,3.8570001125335693 -7.534999847412109,4.8470001220703125 -8.484999656677246,5.546000003814697 C-8.852999687194824,5.816999912261963 -9.008999824523926,6.328999996185303 -8.730999946594238,6.691999912261963 C-8.142999649047852,7.458000183105469 -7.458000183105469,8.142999649047852 -6.691999912261963,8.730999946594238 C-6.329999923706055,9.008999824523926 -5.816999912261963,8.852999687194824 -5.546000003814697,8.484999656677246 C-4.8480000495910645,7.534999847412109 -3.8570001125335693,7.060999870300293 -3.061000108718872,7.390999794006348 C-2.265000104904175,7.7210001945495605 -1.899999976158142,8.756999969482422 -2.078000068664551,9.92300033569336 C-2.1470000743865967,10.375 -1.8949999809265137,10.847000122070312 -1.4420000314712524,10.906000137329102 C-0.9700000286102295,10.968000411987305 -0.48899999260902405,11 0,11 C0.48899999260902405,11 0.9700000286102295,10.968000411987305 1.4420000314712524,10.906000137329102 C1.8949999809265137,10.847000122070312 2.1470000743865967,10.375 2.078000068664551,9.92300033569336 C1.899999976158142,8.756999969482422 2.2660000324249268,7.7210001945495605 3.062000036239624,7.390999794006348 C3.8580000400543213,7.060999870300293 4.8480000495910645,7.534999847412109 5.546000003814697,8.484999656677246 C5.816999912261963,8.852999687194824 6.328999996185303,9.008999824523926 6.691999912261963,8.730999946594238 C7.458000183105469,8.142999649047852 8.142999649047852,7.458000183105469 8.730999946594238,6.691999912261963 C9.008999824523926,6.328999996185303 8.852999687194824,5.816999912261963 8.484999656677246,5.546000003814697 C7.534999847412109,4.8480000495910645 7.060999870300293,3.8570001125335693 7.390999794006348,3.061000108718872 C7.7210001945495605,2.265000104904175 8.756999969482422,1.899999976158142 9.92300033569336,2.078000068664551 C10.375,2.1470000743865967 10.847000122070312,1.8949999809265137 10.906000137329102,1.4420000314712524 C10.968000411987305,0.9700000286102295 11,0.48899999260902405 11,0 C11,-0.48899999260902405 10.968000411987305,-0.9700000286102295 10.906000137329102,-1.4420000314712524 C10.847000122070312,-1.8949999809265137 10.375,-2.1470000743865967 9.92300033569336,-2.078000068664551 C8.756999969482422,-1.899999976158142 7.7210001945495605,-2.265000104904175 7.390999794006348,-3.061000108718872 C7.060999870300293,-3.8570001125335693 7.534999847412109,-4.8480000495910645 8.484999656677246,-5.546000003814697 C8.852999687194824,-5.816999912261963 9.008999824523926,-6.329999923706055 8.730999946594238,-6.691999912261963 C8.142999649047852,-7.458000183105469 7.458000183105469,-8.142999649047852 6.691999912261963,-8.730999946594238 C6.328999996185303,-9.008999824523926 5.817999839782715,-8.852999687194824 5.546999931335449,-8.484999656677246 C4.848999977111816,-7.534999847412109 3.8580000400543213,-7.060999870300293 3.062000036239624,-7.390999794006348 C2.2660000324249268,-7.7210001945495605 1.9010000228881836,-8.756999969482422 2.0789999961853027,-9.92300033569336 C2.1480000019073486,-10.375 1.8949999809265137,-10.847000122070312 1.4420000314712524,-10.906000137329102 C0.9700000286102295,-10.968000411987305 0.48899999260902405,-11 0,-11 C-0.48899999260902405,-11 -0.9700000286102295,-10.968000411987305 -1.4420000314712524,-10.906000137329102z M4,0 C4,2.2090001106262207 2.2090001106262207,4 0,4 C-2.2090001106262207,4 -4,2.2090001106262207 -4,0 C-4,-2.2090001106262207 -2.2090001106262207,-4 0,-4 C2.2090001106262207,-4 4,-2.2090001106262207 4,0z"></path></g></g></g></g></svg></i>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="friends2">
+
+            <div class="item header">
+
+              <div>
+                <p>
+                  <svg class="linkButtonIcon_c91bad" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" class=""></path><path fill="currentColor" d="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56 1.33 1.25C6.12 8.65 9.46 12 13 12h1a8 8 0 0 1 8 8 2 2 0 0 1-2 2 .21.21 0 0 1-.2-.15 7.65 7.65 0 0 0-1.32-2.3c-.15-.2-.42-.06-.39.17l.25 2c.02.15-.1.28-.25.28H9a2 2 0 0 1-2-2v-2.22c0-1.57-.67-3.05-1.53-4.37A15.85 15.85 0 0 1 3 5Z" class=""></path>
+                  </svg>
+                  Amigos
+                </p>
+                <div class="vertical-rule"></div>
+                <button>Disponível</button>
+                <button>Todos</button>
+                <button>Pendente</button>
+                <button>Bloqueado</button>
+                <button class="addfriend">Adicionar amigo</button>
+              </div>
+
+              <div class="header-right-icons">
+                <i id="new-private-group"><svg x="0" y="0" class="icon_e44302" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3h-3a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z" fill="currentColor" class=""></path><path d="M20.76 12.57c.4.3 1.23.13 1.24-.37V12a10 10 0 1 0-18.44 5.36c.12.19.1.44-.04.61l-2.07 2.37A1 1 0 0 0 2.2 22h10c.5-.01.67-.84.37-1.24A3 3 0 0 1 15 16h.5a.5.5 0 0 0 .5-.5V15a3 3 0 0 1 4.76-2.43Z" fill="currentColor" class=""></path></svg></i>
+                <div class="vertical-rule"></div>
+                <i><svg x="0" y="0" class="icon_e44302" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5ZM4 5.5C4 4.67 4.67 4 5.5 4h13c.83 0 1.5.67 1.5 1.5v6c0 .83-.67 1.5-1.5 1.5h-2.65c-.5 0-.85.5-.85 1a3 3 0 1 1-6 0c0-.5-.35-1-.85-1H5.5A1.5 1.5 0 0 1 4 11.5v-6Z" clip-rule="evenodd" class=""></path></svg></i>
+                <i><svg x="0" y="0" class="icon_e44302" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="transparent" class=""></circle><path fill="currentColor" fill-rule="evenodd" d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98 0-1.81.47-2.27 1.14A1 1 0 1 1 7.8 7.01 4.73 4.73 0 0 1 11.72 5c2.5 0 4.65 1.88 4.65 4.38 0 2.1-1.54 3.77-3.52 4.24l.14 1a1 1 0 0 1-1.98.27l-.28-2a1 1 0 0 1 .99-1.14c1.54 0 2.65-1.14 2.65-2.38 0-1.23-1.1-2.37-2.65-2.37ZM13 17.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0Z" clip-rule="evenodd" class=""></path></svg></i>
+              </div>
+            </div>
+
+            <div class="item friend-list">
+              <div>
+                <input placeholder="Buscar" id="buscar">
+                <i class="lupa-icon"><svg class="icon_c18ec9 visible_c18ec9" aria-label="Buscar" aria-hidden="false" role="img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M15.62 17.03a9 9 0 1 1 1.41-1.41l4.68 4.67a1 1 0 0 1-1.42 1.42l-4.67-4.68ZM17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" clip-rule="evenodd" class=""></path></svg></i>
+              </div>
+
+              <div class="all">
+                <p id="all-friends">ONLINE - {Friend-qnt}</p>
+                
+              </div>
+
+              <div class="friend2-list-container">
+                
+                <div class="friend2-container">
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                  <div class="usernamestatus">
+                    
+                    <p class="username">Nome</p>
+                    <p class="direct-messsage-status">Jogando Little nightmares</p>
+                    
+                  </div>
+                </div>
+                <div class="friend2-container">
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                </div>
+                <div class="friend2-container">
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                </div>
+                <div class="friend2-container">
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                </div>
+                <div class="friend2-container">
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                </div>
+                <div class="friend2-container">
+                  <img src="images/akame.png">
+                  <i class="status-circle-direct"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+            
+
+            <div class="item activity">
+
+            </div>
+  
+          </div>
+        </div>
+        
+        
+        
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
